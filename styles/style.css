@@ -3,7 +3,7 @@
 }
 
 .full-viewport {
-  min-block-size: 100svb;
+  min-block-size: 100svh;
   min-inline-size: min(10svi, 100%);
 }
 
@@ -30,7 +30,7 @@
 }
 
 .decorated-zone {
-  position: relative;
+  position: relative; /*создает контекст позиционирования для псевдоэлементов.*/
 }
 
 .decorated-zone::before {
@@ -229,9 +229,7 @@
 
 .main__collage-image-item {
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center;
   object-position: center;
 }
 
